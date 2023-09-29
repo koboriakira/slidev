@@ -227,7 +227,7 @@ class: px-20
 
 # 「アジャイル」と「計画づくり」
 
-<div class="m-4 p-4 text-xs bg-gray500/20" style="font-size: 0.5rem">
+<div class="m-4 p-4 text-sm bg-gray500/20">
 
 見積りと計画づくりは、期日やスケジュールを決定するためだけのものではない。計画づくりとは価値の探求なのだ。\[...\]答えをゴールへと少しつづ近づけていくこと(インクリメンタルに)、そしてそれを繰り返すこと(イテレーティブに)。\[...\]  
 たとえばあるプロジェクトで、最初のスケジュールでは一連の機能セットのリリース日を8月31日に設定していたとする。しかし7月に入った時点になって、少し機能を増やして、その分だけリリースを遅らせる判断を下すかもしれない。あるいは少し機能を削ってでも早めにリリースすることに決めるかもしれない。  
@@ -235,12 +235,12 @@ class: px-20
 <div class="text-right">『アジャイルな見積りと計画づくり〜価値あるソフトウェアを育てる概念と技法』、p28。</div>
 </div>
 
-<div class="my-8 text-center text-sm">自分なりにかみくだくと...</div>
+<div class="my-8 text-center">自分なりにかみくだくと...</div>
 
 <div class="m-4 p-4 bg-blue500/20">
 
 - 「計画づくり」をすることで、品質・コスト・納期・スコープの調整ができる
-- 「計画」ではなく「**計画づくり**」が重要である  <span class="text-xs">（refs: [アジャイル開発は計画しない？](https://qiita.com/kobori_akira/items/6f122372ff114d4ae373)）</span>
+- 「計画」ではなく「**計画づくり**」が重要である  <span class="text-sm">（refs: [アジャイル開発は計画しない？](https://qiita.com/kobori_akira/items/6f122372ff114d4ae373)）</span>
 </div>
 
 <!--
@@ -260,7 +260,7 @@ preload: false
 
 <div class="m-2">
 
-  <div class="my-16 mx-32 p-4 text-xs bg-gray500/20">
+  <div class="my-16 mx-32 p-4 bg-gray500/20">
 
   よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。  
   いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
@@ -271,7 +271,7 @@ preload: false
   ・信頼を確立する  
   ・情報を伝達する
 
-  <div class="text-right" style="font-size: 0.5rem">
+  <div class="text-right text-sm">
   (同、p29, 太字は引用者。)
   </div>
 
@@ -301,19 +301,18 @@ layout: center
 
 # 「進捗」とは
 
-<div class="my-4 mx-24 p-4 text-xs bg-gray500/20" style="font-size: 0.5rem">
+<div class="my-4 mx-24 p-4 text-sm bg-gray500/20">
 
-進み具合・捗り具合、物事がどの程度うまく（順調に）進んでいるか、という意味で用いられる語。「進捗は芳しくない」という風に単独で用いられることもあるが、「進捗状況」や「進捗率」のように連語表現として用いられることも多い。  
-ビジネスにおいてはあらかじめ設けられた目標を期限内に達成することが業務の根幹となる場合が多い。各従業員の業務の進捗状況を把握する「進捗管理」は部署の上長の主な役目といえる。<div class="text-right">([「進捗(しんちょく)」の意味や使い方 わかりやすく解説 Weblio辞書](https://www.weblio.jp/content/%E9%80%B2%E6%8D%97))</div>
+進み具合・捗り具合、物事がどの程度うまく（順調に）進んでいるか、という意味で用いられる語。「進捗は芳しくない」という風に単独で用いられることもあるが、「進捗状況」や「進捗率」のように連語表現として用いられることも多い。<div class="text-right">([「進捗(しんちょく)」の意味や使い方 わかりやすく解説 Weblio辞書](https://www.weblio.jp/content/%E9%80%B2%E6%8D%97))</div>
 </div>
 
-<div class="m-8 text-center text-sm">
+<div class="mt-8 mb-4 text-center text-baseline">
 
 自分なりに再定義すると......
 
 </div>
 
-<div class="mx-40 p-4 bg-blue500/20 text-xs">
+<div class="mx-40 p-4 bg-blue500/20 text-baseline">
 
 <div class="my-4 text-center text-2xl">ある時点からある時点までの間の差分</div>
 
@@ -368,9 +367,7 @@ layout: center
 
 </div>
 
-<div class="mb-4 text-center color-gray text-2xl">↓</div>
-
-<div class="mx-10 p-2 bg-blue-500/20 text-center font-bold">「進捗」のない「完了」も存在する</div>
+<div class="mt-4 mx-10 p-4 bg-blue-500/20 text-center text-2xl font-bold">「進捗」のない「完了」も存在する</div>
 
 <!--
 14:20
@@ -403,7 +400,7 @@ layout: center
 
   「進捗」は自己効力感・モチベーションを高める
 
-  <span class="text-xs">
+  <span class="text-sm">
 
   refs: [マネジャーの最も大切な仕事――95%の人が見過ごす「小さな進捗」の力](https://www.amazon.co.jp/%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E6%9C%80%E3%82%82%E5%A4%A7%E5%88%87%E3%81%AA%E4%BB%95%E4%BA%8B%E2%80%95%E2%80%9595-%E3%81%AE%E4%BA%BA%E3%81%8C%E8%A6%8B%E9%81%8E%E3%81%94%E3%81%99%E3%80%8C%E5%B0%8F%E3%81%95%E3%81%AA%E9%80%B2%E6%8D%97%E3%80%8D%E3%81%AE%E5%8A%9B-%E3%83%86%E3%83%AC%E3%82%B5%E3%83%BB%E3%82%A2%E3%83%9E%E3%83%93%E3%83%BC%E3%83%AB/dp/4862762409)
 
@@ -522,22 +519,22 @@ background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 
 <div class="m-2">
 
-<div class="my-16 mx-32 p-4 text-xs bg-gray500/20">
+  <div class="my-16 mx-32 p-4 bg-gray500/20">
 
-よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。  
-いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
+  よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。  
+  いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
 
-・**リスクを軽減する**  
-・**不確実性を減らす**  
-・**意思決定を支援する**  
-・信頼を確立する  
-・情報を伝達する
+  ・**リスクを軽減する**  
+  ・**不確実性を減らす**  
+  ・**意思決定を支援する**  
+  ・信頼を確立する  
+  ・情報を伝達する
 
-  <div class="text-right" style="font-size: 0.5rem">
+  <div class="text-right text-sm">
   (同、p29, 太字は引用者。)
   </div>
 
-</div>
+  </div>
 
 </div>
 
@@ -610,13 +607,11 @@ background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 
   <div class="p-4">
 
-  <div class="text-center text-sm">進捗を把握するために</div>
+  <div class="text-center text-baseline">進捗を把握するために</div>
 
   <div class="my-2 mx-8 p-4 bg-blue500/20 text-sm">
 
-  <div class="mb-2 text-center text-2xl">これまでどこにいて、<br/>いまどこにいるのか？</div>
-
-  - 差分（状況の変化）のわかる情報
+  <div class="mb-2 text-center text-3xl">これまでどこにいて、いまどこにいるのか?</div>
 
   </div>
 
@@ -624,14 +619,11 @@ background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 
   <div class="p-4">
 
-  <div class="text-center text-sm">よい計画づくりのために</div>
+  <div class="text-center text-baseline">よい計画づくりのために</div>
 
   <div class="my-2 mx-8 p-4 bg-blue500/20 text-sm">
 
-  <div class="mb-2 text-center text-2xl">辿り着いてわかった<br/>ことはなにか？</div>
-
-  - リスク・不確実性の増減のわかる情報
-  - 意思決定の材料になる情報
+  <div class="mb-2 text-center text-3xl">辿り着いてわかった<br/>ことはなにか？</div>
 
   </div>
 
@@ -642,19 +634,19 @@ background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 
 <div class="pt-8 px-4">
 
-  <div class="text-sm">たとえば...</div>
+  <div class="text-baseline">たとえば...</div>
 
-  <div class="text-sm">
+  <div class="text-baseline">
 
   👨「昨日予定していたAPIの設計について、OpenAPIのyamlファイルの作成まで完成した。」
   </div>
 
-  <div class="text-sm">
+  <div class="text-baseline">
 
   👩「開発は順調だけれど、実装するなかで気になる点が出てきた。それは〜」
   </div>
 
-  <div class="text-sm">
+  <div class="text-baseline">
 
   😎「仕様・実装が複雑になり、後半に予定している結合テストのシナリオが当初の2,3倍ぐらいに膨らみそうだとわかった」
   </div>
@@ -664,7 +656,10 @@ background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 <!--
 - 14:27
 - あなたはこれまでどこにいて、いまどこにいるのか
+  - 差分（状況の変化）のわかる情報
 - 辿り着いてわかったことはなにか？
+  - リスク・不確実性の増減のわかる情報
+  - 意思決定の材料になる情報
 - 具体例の説明
 -->
 
