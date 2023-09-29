@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: ./images/greg-rosenke-LdmagxiVmZ0-unsplash.jpg
+background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -12,7 +12,7 @@ transition: slide-left
 title: だれかの進捗をうまく「把握」できないときのフレーズ集 〜 よい計画づくりのために 〜
 mdc: true
 fonts:
-  sans: 'Roboto'
+  sans: 'Meiryo UI'
   serif: 'Roboto Slab'
   mono: 'Fira Code'
 ---
@@ -31,22 +31,51 @@ fonts:
 
 ---
 
-# こんにちは
+# Who is?
 
-- 👨 **Kobori Akira**
-- 📝 **2012年に編集業界でキャリアを開始**
-- 💻 **2015年にIT業界にキャリアチェンジ** 
-- 👶 **2020年に第一子が産まれ、1年間の育休を取得**
+<div class="grid grid-cols-2 gap-8">
+
+  <div class="p-4 bg-red500/20 border-8 border-red100/20 border-rounded">
+
+  ## 💻 編集よりもITを
+
+  <span class="text-sm">2015年にエンジニアにキャリアチェンジ</span>
+
+  </div>
+
+  <div class="p-4 bg-blue500/20 border-8 border-blue100/20 border-rounded">
+
+  ## 👶 ワークよりもライフを
+
+  <span class="text-sm">2020年に第一子が産まれ、1年間の育休を取得</span>
+
+  </div>
+
+  <div class="p-4 bg-green500/20 border-8 border-green100/20 border-rounded">
+
+  ## 📝 インプットよりもアウトプットを
+
+  <span class="text-sm">がんばって記事を書き続けています</span>
+
+  </div>
+
+  <div class="p-4 bg-gray500/20 border-8 border-gray100/20 border-rounded">
+
+  ## 🤼‍♀️ 野球よりもプロレスを
+
+  <span style="font-size: 0.2rem; color: gray">「東京女子プロレス」という沼にハマり中。<br/>坂崎ユカ選手のアクスタが発表を応援してくれてる......！</span>
+
+  </div>
+
+</div>
 
 <br>
 <br>
-
-<!-- TODO: Meetyリンクはるか -->
-Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 <!--
-簡単に自己紹介する 14:01 - 14:02
-育休の話とかはMeetyでぜひ
+- 14:02
+- アジャイル4原則をまねてみました
+- 育休の話とかはMeetyでぜひ
 -->
 
 ---
@@ -55,15 +84,17 @@ layout: default
 ---
 
 # こんな記事を書いています
-<br/>
-<div>
+
+<div class="mt-16 text-center text-xl">
+
+<span class="text-sm">今日の発表元になったブログ記事</span>
 
 [だれかの進捗をうまく把握できないときのフレーズ集](https://qiita.com/kobori_akira/items/9ab3e81bbf0d1c00e49f)  
 
 </div>
-<br/>
 
-<Transform :scale="0.7">
+
+<div class="mt-24 text-sm">
 
 そのほか、次のような記事を書いています
 
@@ -72,11 +103,13 @@ layout: default
 - [「できる」と「わかる」を区別する](https://qiita.com/kobori_akira/items/7e78d43e40f6b796929d)
 - [有野課長のように、あるいはあの頃のボクのように](https://qiita.com/kobori_akira/items/c8129a3a1de9f2b896d4)
 
-</Transform>
+</div>
 
-<!-- 
-14:03
-技術が好きだが、ブログにはエンジニアリング以外のことを書いています。よかったら読んでみてください
+<!--
+- 14:03
+- 今日の発表の元ネタになったブログ。Qiitaは95000viewと1200いいね、はてブは1500のブックマーク
+  - 変な炎上もせず、いろいろな意見や感想がもらえてよかった
+- 技術が好きだが、ブログにはエンジニアリング以外のことを書いています。よかったら読んでみてください
 -->
 
 ---
@@ -86,34 +119,39 @@ transition: fade-out
 
 # 目次
 
-<Transform :scale="1.2">
+<div class="text-2xl">
 
 0. イントロダクション
 1. 「計画づくり」と「進捗」
 2. 進捗を把握する難しさ
-3. 進捗をうまく把握するための工夫
+3. 進捗をうまく把握するために
 3. 「進捗」を把握しやすくするフレーズ
 4. みんなのフレーズ
 
-</Transform>
+</div>
 
 <!--
 - 14:06
 - 今日の目次は次の通り
--  1: 「計画づくり」と「進捗」という言葉について、共通した認識を持ち、その重要性を理解すること。
--  2: つぎに重要な要素である「進捗」をどのように把握すればよいか
-- 3: そして「進捗」を把握しやすくするための具体的なフレーズをひとつずつ見ていく
-- 4: 最後は、興味・関心を持って集まっていただいた皆さんがどんなフレーズを使っているか。あるいは使ってみようと浮かんだか教えていただき、この場で拾えたらと思っています
+- 1: 「計画づくり」と「進捗」という言葉について、共通した認識を持ち、その重要性を理解すること。
+- 2: つぎに重要な「進捗」を把握することの難しさ
+- 3: そして重要な要素である「進捗」をどのように把握すればよいか
+- 4: 最後は「進捗」を把握しやすくするための具体的なフレーズをひとつずつ見ていく
+- 5: さらには、興味・関心を持って集まっていただいた皆さんがどんなフレーズを使っているか。あるいは使ってみようと浮かんだか教えていただき、この場で拾えたらと思っています
   - この時間ですぐ出ないようであれば、こうしたことを強く意識したキッカケを語ろうと思います
-- というわけで、早速内容に入ってきましょう。さて......
 -->
 
 ---
-transition: slide-up
-layout: center
+transition: fade-out
+layout: cover
+background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 ---
 
 # イントロダクション
+
+<!--
+- というわけで、早速内容に入ってきましょう。さて......
+-->
 
 ---
 transition: slide-up
@@ -156,10 +194,10 @@ layout: image-left
 image: ./images/brooke-cagle--uHVRvDr7pg-unsplash.jpg
 ---
 
-# おなじく、ある日の開発チームにて
+# ある日の開発チームにて
 
 - 朝会やデイリースクラムで、お互いの進捗を確認しあっています
-- どんなふうに**報告してほしい**でしょうか？
+- どんなふうに<span class="p-1 bg-red500/20 font-bold">報告してほしい</span>でしょうか？
 
 <!--
 - 14:10
@@ -170,7 +208,9 @@ image: ./images/brooke-cagle--uHVRvDr7pg-unsplash.jpg
 -->
 
 ---
-layout: center
+transition: fade-out
+layout: cover
+background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 ---
 
 # 「計画づくり」と「進捗」
@@ -187,18 +227,21 @@ class: px-20
 
 # 「アジャイル」と「計画づくり」
 
-アジャイル開発において「計画づくり」は重要な要素
+<div class="m-4 p-4 text-xs bg-gray500/20" style="font-size: 0.5rem">
 
-> 見積りと計画づくりは、期日やスケジュールを決定するためだけのものではない。計画づくりとは価値の探求なのだ。  
-答えをゴールへと少しつづ近づけていくこと(インクリメンタルに)、そしてそれを繰り返すこと(イテレーティブに)。  
+見積りと計画づくりは、期日やスケジュールを決定するためだけのものではない。計画づくりとは価値の探求なのだ。\[...\]答えをゴールへと少しつづ近づけていくこと(インクリメンタルに)、そしてそれを繰り返すこと(イテレーティブに)。\[...\]  
 たとえばあるプロジェクトで、最初のスケジュールでは一連の機能セットのリリース日を8月31日に設定していたとする。しかし7月に入った時点になって、少し機能を増やして、その分だけリリースを遅らせる判断を下すかもしれない。あるいは少し機能を削ってでも早めにリリースすることに決めるかもしれない。  
-(p28)
 
-<br/><br/>
+<div class="text-right">『アジャイルな見積りと計画づくり〜価値あるソフトウェアを育てる概念と技法』、p28。</div>
+</div>
 
-- 「計画づくり」をすることで、QCD(質、コスト、納期)の調整ができる
-- 「計画」ではなく「**計画づくり**」が重要である
-  - refs: [アジャイル開発は計画しない？](https://qiita.com/kobori_akira/items/6f122372ff114d4ae373)
+<div class="my-8 text-center text-sm">自分なりにかみくだくと...</div>
+
+<div class="m-4 p-4 bg-blue500/20">
+
+- 「計画づくり」をすることで、品質・コスト・納期・スコープの調整ができる
+- 「計画」ではなく「**計画づくり**」が重要である  <span class="text-xs">（refs: [アジャイル開発は計画しない？](https://qiita.com/kobori_akira/items/6f122372ff114d4ae373)）</span>
+</div>
 
 <!--
 14:13
@@ -215,15 +258,26 @@ preload: false
 
 # よい「計画づくり」とは
 
-よい「計画づくり」を続けると、さまざまなメリットがある
+<div class="m-2">
 
-> よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
-・**リスクを軽減する**  
-・**不確実性を減らす**  
-・**意思決定を支援する**  
-・信頼を確立する  
-・情報を伝達する  
-(p29, 太字は引用者)
+  <div class="my-16 mx-32 p-4 text-xs bg-gray500/20">
+
+  よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。  
+  いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
+
+  ・**リスクを軽減する**  
+  ・**不確実性を減らす**  
+  ・**意思決定を支援する**  
+  ・信頼を確立する  
+  ・情報を伝達する
+
+  <div class="text-right" style="font-size: 0.5rem">
+  (同、p29, 太字は引用者。)
+  </div>
+
+  </div>
+
+</div>
 
 <!--
 14:15
@@ -247,19 +301,34 @@ layout: center
 
 # 「進捗」とは
 
-<div class="text-xs mb-12">
+<div class="my-4 mx-24 p-4 text-xs bg-gray500/20" style="font-size: 0.5rem">
 
-> 進み具合・捗り具合、物事がどの程度うまく（順調に）進んでいるか、という意味で用いられる語。「進捗は芳しくない」という風に単独で用いられることもあるが、「進捗状況」や「進捗率」のように連語表現として用いられることも多い。  
-ビジネスにおいてはあらかじめ設けられた目標を期限内に達成することが業務の根幹となる場合が多い。各従業員の業務の進捗状況を把握する「進捗管理」は部署の上長の主な役目といえる。  
-([「進捗(しんちょく)」の意味や使い方 わかりやすく解説 Weblio辞書](https://www.weblio.jp/content/%E9%80%B2%E6%8D%97))
+進み具合・捗り具合、物事がどの程度うまく（順調に）進んでいるか、という意味で用いられる語。「進捗は芳しくない」という風に単独で用いられることもあるが、「進捗状況」や「進捗率」のように連語表現として用いられることも多い。  
+ビジネスにおいてはあらかじめ設けられた目標を期限内に達成することが業務の根幹となる場合が多い。各従業員の業務の進捗状況を把握する「進捗管理」は部署の上長の主な役目といえる。<div class="text-right">([「進捗(しんちょく)」の意味や使い方 わかりやすく解説 Weblio辞書](https://www.weblio.jp/content/%E9%80%B2%E6%8D%97))</div>
 </div>
+
+<div class="m-8 text-center text-sm">
 
 自分なりに再定義すると......
 
-- <span class="p-1 bg-red500/20">ある時点からある時点までの間の差分</span>
-  - ポジティブ、ネガティブは関係ないとしている
-- ざっくり「<span class="p-1 bg-red500/20">状況が変わった</span>」ことが重要だと捉えている
-  - タスクが完了しただけでは不十分であることが多い
+</div>
+
+<div class="mx-40 p-4 bg-blue500/20 text-xs">
+
+<div class="my-4 text-center text-2xl">ある時点からある時点までの間の差分</div>
+
+- ざっくり「状況が変わった」みたいなこと
+- ポジティブ、ネガティブは関係ないとしている
+- タスクが完了しただけでは不十分であることが多い
+
+</div>
+
+<div class="p-4">
+
+
+
+</div>
+
 
 <!--
 14:17
@@ -274,11 +343,9 @@ layout: center
 
 # 進捗であるもの、進捗でないもの
 
-差分は出たのか？　状況は変わったのか？
+<div class="grid grid-cols-2 gap-8 p-8">
 
-<div class="grid grid-cols-2 gap-10 p-10">
-
-  <div class="p-8 bg-green-500/20">
+  <div class="p-4 bg-green-500/20">
 
   <div class="mb-4 text-center text-3xl">👍</div>
 
@@ -289,7 +356,7 @@ layout: center
 
   </div>
 
-  <div class="p-8 bg-gray-500/10">
+  <div class="p-4 bg-gray-500/10">
 
   <div class="mb-4 text-center text-3xl">👎</div>
 
@@ -300,6 +367,11 @@ layout: center
   </div>
 
 </div>
+
+<div class="mb-4 text-center color-gray text-2xl">↓</div>
+
+<div class="mx-10 p-2 bg-blue-500/20 text-center font-bold">「進捗」のない「完了」も存在する</div>
+
 <!--
 14:20
 - リリースやテスト完了はとくに違和感ないだろう
@@ -328,6 +400,7 @@ layout: center
   <div class="p-8 bg-blue-500/20">
 
   ## モチベーションのため
+
   「進捗」は自己効力感・モチベーションを高める
 
   <span class="text-xs">
@@ -349,16 +422,47 @@ layout: center
 -->
 
 ---
+transition: fade-out
+---
 
-# ここまでの結論
+# ここまでのまとめ
 
-<div class="text-2xl">
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
 
-- **「計画づくり」を続けるには「進捗」を出すことが重要**
-- **「進捗」を把握すれば「計画づくり」が続けられる**
-  - <span class="text-xl">デイリーとは「進捗を把握し、計画を小さく修正できる」貴重な時間</span>
+**・「計画づくり」を続けるには「進捗」を出すことが重要**
 
 </div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「進捗」を把握すれば「計画づくり」が続けられる**  
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「進捗」とは差分である**  
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「進捗」のない「完了」も存在する**  
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・進捗を把握するのは難しい**
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「これまでどこにいて、いまどこにいるのか」<br/>　「辿り着いてわかったことはなにか」を把握しよう**
+
+</div>
+
 
 <!--
 - アジャイル開発において計画づくりが重要であり、そのためには進捗を出すことが重要である
@@ -366,7 +470,9 @@ layout: center
 -->
 
 ---
-layout: center
+transition: fade-out
+layout: cover
+background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 ---
 
 # 進捗を把握する難しさ
@@ -381,35 +487,71 @@ layout: center
 
 # (再掲)進捗であるもの、進捗でないもの
 
-- ◯◯機能のリリースをした → 👍
-- ◯◯機能のテストが完了した → 👍
-- レビューで修正すべき点が明らかになった → 👍
-- MTGによって来期の計画が決まった → 👍
+<div class="grid grid-cols-2 gap-8 p-8">
 
-<br/>
+  <div class="p-4 bg-green-500/20">
 
-- 1時間のMTGをした → 👎
-- 実装が進んだ → 👎
-- いろいろやった → 👎
+  <div class="mb-4 text-center text-3xl">👍</div>
+
+  - ◯◯機能のリリースをした
+  - ◯◯機能のテストが完了した
+  - レビューで修正すべき点が明らかになった
+  - MTGによって来期の計画が決まった
+
+  </div>
+
+  <div class="p-4 bg-gray-500/10">
+
+  <div class="mb-4 text-center text-3xl">👎</div>
+
+  - 1時間のMTGをした
+  - 実装が進んだ
+  - いろいろやった
+
+  </div>
+
+</div>
+
+<!--
+- さらっと再確認
+-->
+
 ---
 
 # (再掲)よい「計画づくり」とは
 
-よい「計画づくり」を続けると、さまざまなメリットがある
+<div class="m-2">
 
-> よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
+<div class="my-16 mx-32 p-4 text-xs bg-gray500/20">
+
+よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。  
+いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
+
 ・**リスクを軽減する**  
 ・**不確実性を減らす**  
 ・**意思決定を支援する**  
 ・信頼を確立する  
-・情報を伝達する  
-(p29, 太字は引用者)
+・情報を伝達する
 
+  <div class="text-right" style="font-size: 0.5rem">
+  (同、p29, 太字は引用者。)
+  </div>
+
+</div>
+
+</div>
+
+<!--
+- さらっと再確認
+-->
+
+---
+transition: fade-out
 ---
 
 # 「進捗ではない」「計画づくりにひもづかない」報告
 
-<div class="p-20">
+<div class="mt-16 px-16">
 
   <div class="text-left">
   👨「◯◯機能の実装をつづけます！」
@@ -431,6 +573,8 @@ layout: center
   </div>
 </div>
 
+<div class="m-8 text-center text-4xl color-gray">↓</div>
+
 <div class="p-4 bg-blue500/20 text-2xl text-center">
 
 **進捗の把握しづらい情報共有は、よい計画づくりを難しくしてしまう**
@@ -447,10 +591,12 @@ layout: center
 -->
 
 ---
-layout: center
+transition: fade-out
+layout: cover
+background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 ---
 
-# 進捗をうまく把握するための工夫
+# 進捗をうまく把握するために
 
 <!--
 - ではどのようにして他人の進捗を把握しましょうか？
@@ -464,11 +610,11 @@ layout: center
 
   <div class="p-4">
 
-  <div class="text-center">進捗を把握するために</div>
+  <div class="text-center text-sm">進捗を把握するために</div>
 
-  <div class="p-4 bg-blue500/20 text-sm">
+  <div class="my-2 mx-8 p-4 bg-blue500/20 text-sm">
 
-  <span class="text-2xl">これまでどこにいて、<br/>いまどこにいるのか？</span>
+  <div class="mb-2 text-center text-2xl">これまでどこにいて、<br/>いまどこにいるのか？</div>
 
   - 差分（状況の変化）のわかる情報
 
@@ -478,11 +624,11 @@ layout: center
 
   <div class="p-4">
 
-  <div class="text-center">よい計画づくりのために</div>
+  <div class="text-center text-sm">よい計画づくりのために</div>
 
-  <div class="p-4 bg-blue500/20 text-sm">
+  <div class="my-2 mx-8 p-4 bg-blue500/20 text-sm">
 
-  <span class="text-2xl">辿り着いてわかったことはなにか？</span>
+  <div class="mb-2 text-center text-2xl">辿り着いてわかった<br/>ことはなにか？</div>
 
   - リスク・不確実性の増減のわかる情報
   - 意思決定の材料になる情報
@@ -494,7 +640,9 @@ layout: center
 
 </div>
 
-<div class="px-4">
+<div class="pt-8 px-4">
+
+  <div class="text-sm">たとえば...</div>
 
   <div class="text-sm">
 
@@ -521,25 +669,56 @@ layout: center
 -->
 
 ---
+transition: fade-out
+---
 
-# ここまでの結論
+# ここまでのまとめ
 
-<div class="text-2xl">
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
 
-- 「計画づくり」を続けるには「進捗」を出すことが重要
-- 「進捗」を把握すれば「計画づくり」が続けられる
-  - <span class="text-xl">デイリーとは「進捗を把握し、計画を小さく修正できる」貴重な時間</span>
-- **進捗を把握するのは難しい**
-- **「これまでどこにいて、いまどこにいるのか」「辿り着いてわかったことはなにか」を把握しよう**
+**・「計画づくり」を続けるには「進捗」を出すことが重要**
 
 </div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「進捗」を把握すれば「計画づくり」が続けられる**  
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「進捗」とは差分である**  
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「進捗」のない「完了」も存在する**  
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・進捗を把握するのは難しい**
+
+</div>
+
+<div class="m-2 pl-4 bg-blue500/20 border-2 border-blue100/20 border-rounded text-xl">
+
+**・「これまでどこにいて、いまどこにいるのか」<br/>　「辿り着いてわかったことはなにか」を把握しよう**
+
+</div>
+
 
 <!--
 
 -->
 
 ---
-layout: center
+transition: fade-out
+layout: cover
+background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 ---
 
 # 「進捗」を把握しやすくするフレーズ
@@ -552,6 +731,8 @@ layout: center
 ---
 layout: center
 ---
+
+# 「進捗」を把握しやすくするフレーズ
 
 <div class="m-20 p-8 bg-green500/20">
 
@@ -574,7 +755,7 @@ background: ./images/pawel-czerwinski-i0h7EEsOwNQ-unsplash.jpg
 
 # 次にやることは？ / このあとは何をする？
 
-<div class="p-4 text-xl">
+<div class="m-16 text-xl">
 
 - できるかぎり具体的な「次の行動」を確認する
 - 自然と「いまどこまで終わったか」が明らかになることが多い
@@ -598,7 +779,7 @@ background: ./images/pramod-tiwari-2JMKvS2qT9c-unsplash.jpg
 
 # 〜時点でどんな状態を目指しますか？
 
-<div class="p-4 text-xl">
+<div class="m-16 text-xl">
 
 - 「〜という状態になっている」「〜が完了している」などを定義してみる
   - 「状態」の達成条件も決めておくと尚良し
@@ -625,7 +806,7 @@ background: ./images/eren-yildiz-oQzH8fIfjoM-unsplash.jpg
 
 # 「明日〜して」って言われたら大丈夫ですか？
 
-<div class="p-4 text-xl">
+<div class="m-16 text-xl">
 
 - 進捗の確かさや、お互いの完了条件が一致しているかを確認できる
 - とくに「完成」「リリース」という状態が各役割で一致していないことが多い
@@ -651,7 +832,7 @@ background: ./images/sumaid-pal-singh-bakshi-W9x3K7pD0S8-unsplash.jpg
 
 # 大変だったことはありますか？
 
-<div class="p-4 text-xl">
+<div class="m-16 text-xl">
 
 - 「たどりついてわかったこと」の観点
 - 「時間がかかった」「面倒くさかった」「できなかったので〜で代用した」などある
@@ -676,7 +857,7 @@ background: ./images/gor-UqV3Chmk8v4-unsplash.jpg
 
 # どうでもいいけど話しておきたいことはありますか？
 
-<div class="p-4 text-xl">
+<div class="m-16 text-xl">
 
 - ときおりとんでもない効果を出す質問
 - ふだん発言の少ない人や発言をためらってる人が喋ってくれるように促してみる
@@ -690,7 +871,9 @@ background: ./images/gor-UqV3Chmk8v4-unsplash.jpg
 -->
 
 ---
-layout: center
+transition: fade-out
+layout: cover
+background: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 ---
 
 # みんなのフレーズ
@@ -703,16 +886,35 @@ layout: center
 -->
 
 ---
-layout: center
+transition: fade-out
+image: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 ---
-
-
-<div class="content-center my-20">
 
 # ご清聴ありがとうございました！
 
-</div>
+<div>
 
+- 感想や疑問、質問など好きに書いていただければ嬉しいです！
+- ひきつづき[Qiita](https://qiita.com/kobori_akira)などに記事を書き続ける予定です。よろしければフォローください！
+- 自社採用の一貫で[Meety](https://meety.net/matches/iygXhCOyFXsS)もオープンにしています
+
+  <div class="grid grid-cols-3 gap-4 mt-16">
+
+  <div>
+    <div class="text-center text-sm">Qiita</div>
+    <div class="ml-13"><img src="images/qiita_qr.png" class="h-40 rounded shadow" /></div>
+  </div>
+  <div>
+    <div class="text-center text-sm">Meety(アジャイル話)</div>
+    <div class="ml-14"><img src="images/meety-agile-qr.png" class="h-40 rounded shadow" /></div>
+  </div>
+   <div>
+    <div class="text-center text-sm">Meety(育休話)</div>
+    <div class="ml-13"><img src="images/meety-ikukyu-qr.png" class="h-40 rounded shadow" /></div>
+  </div>
+
+  </div>
+</div>
 <!--
 - 時間があまったときのメモ
 -->
