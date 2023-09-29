@@ -894,11 +894,13 @@ image: ./images/erik-witsoe-pvoQJym18Jg-unsplash.jpg
 
 <div>
 
+- 本日の登壇資料は[SlideShare](https://speakerdeck.com/koboriakira)にもアップされています！
+  - Slidevをつかって書いてみたので、よろしければ[GitHub](https://github.com/koboriakira/slidev/tree/main/xp_festival_2023)も
 - 感想や疑問、質問など好きに書いていただければ嬉しいです！
 - ひきつづき[Qiita](https://qiita.com/kobori_akira)などに記事を書き続ける予定です。よろしければフォローください！
 - 自社採用の一貫で[Meety](https://meety.net/matches/iygXhCOyFXsS)もオープンにしています
 
-  <div class="grid grid-cols-3 gap-4 mt-16">
+  <div class="grid grid-cols-3 gap-4 mt-8">
 
   <div>
     <div class="text-center text-sm">Qiita</div>
