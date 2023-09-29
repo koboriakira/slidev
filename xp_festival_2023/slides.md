@@ -1,154 +1,133 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: ./images/greg-rosenke-LdmagxiVmZ0-unsplash.jpg
 class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  Slidev Starter Template
 drawings:
   persist: false
 transition: slide-left
-title: Welcome to Slidev
+title: だれかの進捗をうまく「把握」できないときのフレーズ集 〜 よい計画づくりのために 〜
 mdc: true
+fonts:
+  sans: 'Roboto'
+  serif: 'Roboto Slab'
+  mono: 'Fira Code'
 ---
 
-# Welcome to Slidev
+# だれかの進捗をうまく「把握」できないときのフレーズ集
+〜 よい計画づくりのために 〜
 
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+2023.09.30 コボリアキラ
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+- 14:01
+- タイトル読み上げ
+- 30分以上の登壇ははじめて
+- 盛り上がっている感を出そう！　ぜひたくさんコメントしてください。進捗把握出来てるよ〜できてないよーとか
+-->
+
+---
+
+# こんにちは
+
+- 👨 **Kobori Akira**
+- 📝 **2012年に編集業界でキャリアを開始**
+- 💻 **2015年にIT業界にキャリアチェンジ** 
+- 👶 **2020年に第一子が産まれ、1年間の育休を取得**
+
+<br>
+<br>
+
+<!-- TODO: Meetyリンクはるか -->
+Read more about [Why Slidev?](https://sli.dev/guide/why)
+
+<!--
+簡単に自己紹介する 14:01 - 14:02
+育休の話とかはMeetyでぜひ
 -->
 
 ---
 transition: fade-out
+layout: default
 ---
 
-# What is Slidev?
+# こんな記事を書いています
+<br/>
+<div>
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+[だれかの進捗をうまく把握できないときのフレーズ集](https://qiita.com/kobori_akira/items/9ab3e81bbf0d1c00e49f)  
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+</div>
+<br/>
 
-<br>
-<br>
+<Transform :scale="0.7">
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+そのほか、次のような記事を書いています
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
+- [「ふつうのエンジニア」になるための、ちょっとした発想の転換](https://qiita.com/kobori_akira/items/02d9808af29a70068d87)
+- [非エンジニア向けにもわかるよう「依存」を解説する](https://qiita.com/kobori_akira/items/29a0f6b3350ccb362424)
+- [「できる」と「わかる」を区別する](https://qiita.com/kobori_akira/items/7e78d43e40f6b796929d)
+- [有野課長のように、あるいはあの頃のボクのように](https://qiita.com/kobori_akira/items/c8129a3a1de9f2b896d4)
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
+</Transform>
 
-<!--
-Here is another comment.
+<!-- 
+14:03
+技術が好きだが、ブログにはエンジニアリング以外のことを書いています。よかったら読んでみてください
 -->
 
 ---
 layout: default
+transition: fade-out
 ---
 
-# Table of contents
+# 目次
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+<Transform :scale="1.2">
 
-<Toc maxDepth="1"></Toc>
+0. イントロダクション
+1. 「計画づくり」と「進捗」
+2. 進捗を把握する難しさ
+3. 進捗をうまく把握するための工夫
+3. 「進捗」を把握しやすくするフレーズ
+4. みんなのフレーズ
+
+</Transform>
+
+<!--
+- 14:06
+- 今日の目次は次の通り
+-  1: 「計画づくり」と「進捗」という言葉について、共通した認識を持ち、その重要性を理解すること。
+-  2: つぎに重要な要素である「進捗」をどのように把握すればよいか
+- 3: そして「進捗」を把握しやすくするための具体的なフレーズをひとつずつ見ていく
+- 4: 最後は、興味・関心を持って集まっていただいた皆さんがどんなフレーズを使っているか。あるいは使ってみようと浮かんだか教えていただき、この場で拾えたらと思っています
+  - この時間ですぐ出ないようであれば、こうしたことを強く意識したキッカケを語ろうと思います
+- というわけで、早速内容に入ってきましょう。さて......
+-->
 
 ---
 transition: slide-up
-level: 2
+layout: center
 ---
 
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+# イントロダクション
 
 ---
+transition: slide-up
 layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+image: ./images/brooke-cagle--uHVRvDr7pg-unsplash.jpg
 ---
 
-# Code
+# ある日の開発チームにて
 
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
+- 朝会やデイリースクラムで、お互いの進捗を確認しあっています
+- どんなふうに報告するでしょうか？
 
 <style>
+
 .footnotes-sep {
   @apply mt-20 opacity-10;
 }
@@ -158,276 +137,582 @@ function updateUser(id: number, update: User) {
 .footnote-backref {
   display: none;
 }
+
 </style>
 
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
 <!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
+- 14:07
+- できるかぎり具体的にイメージさせる。Discordへの書き込みも募集
+  - 朝8時に起きて支度して、出社もしくはオンラインでデイリーが始まります
+  - おそらくは昨日完了したことや今日やることを話すでしょう
+  - 実際今週のデイリーはどうでしたか？
+  - デイリーやっていない人は、誰かに状況を確認されたときにどう答えるかを考えてみてもよいです
+- だいたいは「いま〜の開発を進めてます。今日はその続きをやります」ぐらいでは？
 -->
 
+---
+transition: fade-out
+layout: image-left
+image: ./images/brooke-cagle--uHVRvDr7pg-unsplash.jpg
+---
+
+# おなじく、ある日の開発チームにて
+
+- 朝会やデイリースクラムで、お互いの進捗を確認しあっています
+- どんなふうに**報告してほしい**でしょうか？
+
+<!--
+- 14:10
+- あなたがプロダクト・プロジェクトのマネージャー、あるいはその作業者・チームの進行具合があなたの作業に影響を与える場合を想定してみましょう
+- あなたがさきほどした情報共有は、どれくらい嬉しいものですか？
+- たとえば「決済機能を開発をひきつづき続けてます」とか「不具合の改修がだいたい終わりました」とか
+- あなたがそれを受け取ったあとのリアクションも考えてみたいですね
+-->
+
+---
+layout: center
+---
+
+# 「計画づくり」と「進捗」
+
+<!--
+- 14:10
+- 想像してもらったところで、「計画づくり」と「進捗」について語ってみようと思います。
+- まず「計画づくり」から考えてみましょう
+-->
 
 ---
 class: px-20
 ---
 
-# Themes
+# 「アジャイル」と「計画づくり」
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+アジャイル開発において「計画づくり」は重要な要素
 
-<div grid="~ cols-2 gap-2" m="-t-2">
+> 見積りと計画づくりは、期日やスケジュールを決定するためだけのものではない。計画づくりとは価値の探求なのだ。  
+答えをゴールへと少しつづ近づけていくこと(インクリメンタルに)、そしてそれを繰り返すこと(イテレーティブに)。  
+たとえばあるプロジェクトで、最初のスケジュールでは一連の機能セットのリリース日を8月31日に設定していたとする。しかし7月に入った時点になって、少し機能を増やして、その分だけリリースを遅らせる判断を下すかもしれない。あるいは少し機能を削ってでも早めにリリースすることに決めるかもしれない。  
+(p28)
 
-```yaml
----
-theme: default
----
-```
+<br/><br/>
 
-```yaml
----
-theme: seriph
----
-```
+- 「計画づくり」をすることで、QCD(質、コスト、納期)の調整ができる
+- 「計画」ではなく「**計画づくり**」が重要である
+  - refs: [アジャイル開発は計画しない？](https://qiita.com/kobori_akira/items/6f122372ff114d4ae373)
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+<!--
+14:13
+- いったん引用をすべて読む。
+- 「計画づくり」をすることで、QCD(質、コスト、納期)の調整ができる
+- できあがった「計画」も大事だが、アジャイルにおいてはそれ以上に「計画づくり」が重要。
+  - 計画を見直しつづけることで、アジャイルな開発が達成できる
+  - Qiita書いてるのでよろしければ
+-->
 
 ---
 preload: false
 ---
 
-# Animations
+# よい「計画づくり」とは
 
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
+よい「計画づくり」を続けると、さまざまなメリットがある
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
+> よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
+・**リスクを軽減する**  
+・**不確実性を減らす**  
+・**意思決定を支援する**  
+・信頼を確立する  
+・情報を伝達する  
+(p29, 太字は引用者)
 
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
+<!--
+14:15
+- 引用を読む
+- よい計画づくりを続けていれば、自然と不確実性・リスクのコントロールができるようになる。コントロールには意思決定も含む
+- このプレゼンではとくに太字の3つを取り上げて展開したい
+-->
 
 ---
 layout: center
-class: text-center
 ---
 
-# Learn More
+# 「進捗」とは
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+<!--14:15
+つぎに「進捗」が「計画づくり」とどう関連しているのかをおさえましょう
+-->
+
+
+---
+
+# 「進捗」とは
+
+<div class="text-xs mb-12">
+
+> 進み具合・捗り具合、物事がどの程度うまく（順調に）進んでいるか、という意味で用いられる語。「進捗は芳しくない」という風に単独で用いられることもあるが、「進捗状況」や「進捗率」のように連語表現として用いられることも多い。  
+ビジネスにおいてはあらかじめ設けられた目標を期限内に達成することが業務の根幹となる場合が多い。各従業員の業務の進捗状況を把握する「進捗管理」は部署の上長の主な役目といえる。  
+([「進捗(しんちょく)」の意味や使い方 わかりやすく解説 Weblio辞書](https://www.weblio.jp/content/%E9%80%B2%E6%8D%97))
+</div>
+
+自分なりに再定義すると......
+
+- <span class="p-1 bg-red500/20">ある時点からある時点までの間の差分</span>
+  - ポジティブ、ネガティブは関係ないとしている
+- ざっくり「<span class="p-1 bg-red500/20">状況が変わった</span>」ことが重要だと捉えている
+  - タスクが完了しただけでは不十分であることが多い
+
+<!--
+14:17
+- 辞書的な意味は無視して、もっとわかりやすく表現してみた
+- 例: 待ち合わせ場所に行くとき(どこまで着いたか？)
+- ネガティブであっても状況が変わったのであれば、それは進捗と捉えたほうがいいと思う
+  - ただし環境の変化までは含めない。あくまで自身の行動による影響の範囲内で考える
+- TODOリストにおける「完了」がそのまま進捗でないことが重要だと考えている
+-->
+
+---
+
+# 進捗であるもの、進捗でないもの
+
+差分は出たのか？　状況は変わったのか？
+
+<div class="grid grid-cols-2 gap-10 p-10">
+
+  <div class="p-8 bg-green-500/20">
+
+  <div class="mb-4 text-center text-3xl">👍</div>
+
+  - ◯◯機能のリリースをした
+  - ◯◯機能のテストが完了した
+  - レビューで修正すべき点が明らかになった
+  - MTGによって来期の計画が決まった
+
+  </div>
+
+  <div class="p-8 bg-gray-500/10">
+
+  <div class="mb-4 text-center text-3xl">👎</div>
+
+  - 1時間のMTGをした
+  - 実装が進んだ
+  - いろいろやった
+
+  </div>
+
+</div>
+<!--
+14:20
+- リリースやテスト完了はとくに違和感ないだろう
+  - これは「〜が終わったら次は...をする」みたいなイメージができるから、状況が変わった
+- 同じくグッドケースは状況が変わっている
+- TODOリストであれば「1時間のMTGをした」ことで完了となる。しかし意味のないMTGだったかもしれない。なにも意思決定ができなかったかもしれない
+  - 脱線するが、MTGにおいても「MTG前後で差分が出る」ように意識したほうがいい。差分は意思決定にかぎらず、「相手が〜を知っている状況にする」とかもOK
+- 「実装が進んだ」も似ている。進んだことは嬉しい。でもそれで結局なんなの？
+  - たとえば「〜のストーリーが完成した」とかだと良い。「開発が難しい開発は終わったので、あとは計画した通りに進められる可能性が高くなった」とかだと最高では？
+-->
+
+---
+
+# なぜ「進捗」が重要なのか
+
+<div class="grid grid-cols-2 gap-8 p-10">
+
+  <div class="p-8 bg-blue-500/20">
+
+  ## 計画づくりのため
+
+  「進捗」が出ることによって、計画づくりを続けることができる
+
+  </div>
+
+  <div class="p-8 bg-blue-500/20">
+
+  ## モチベーションのため
+  「進捗」は自己効力感・モチベーションを高める
+
+  <span class="text-xs">
+
+  refs: [マネジャーの最も大切な仕事――95%の人が見過ごす「小さな進捗」の力](https://www.amazon.co.jp/%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E6%9C%80%E3%82%82%E5%A4%A7%E5%88%87%E3%81%AA%E4%BB%95%E4%BA%8B%E2%80%95%E2%80%9595-%E3%81%AE%E4%BA%BA%E3%81%8C%E8%A6%8B%E9%81%8E%E3%81%94%E3%81%99%E3%80%8C%E5%B0%8F%E3%81%95%E3%81%AA%E9%80%B2%E6%8D%97%E3%80%8D%E3%81%AE%E5%8A%9B-%E3%83%86%E3%83%AC%E3%82%B5%E3%83%BB%E3%82%A2%E3%83%9E%E3%83%93%E3%83%BC%E3%83%AB/dp/4862762409)
+
+  </span>
+  </div>
+
+</div>
+
+<!--
+14:22
+- 進捗が出ると計画づくりができる。なぜなら状況が変わるから
+  - 乗り物の例ふたたび
+- 進捗が出ていることを確認させることも重要
+  - 本人は上手に把握していないが、ちゃんと分析すれば大小関係なく「進捗」はあるはず
+  - 「昨日と比べて、〜が変わったね！」という勇気づけができる
+-->
+
+---
+
+# ここまでの結論
+
+<div class="text-2xl">
+
+- **「計画づくり」を続けるには「進捗」を出すことが重要**
+- **「進捗」を把握すれば「計画づくり」が続けられる**
+  - <span class="text-xl">デイリーとは「進捗を把握し、計画を小さく修正できる」貴重な時間</span>
+
+</div>
+
+<!--
+- アジャイル開発において計画づくりが重要であり、そのためには進捗を出すことが重要である
+- ここでちょっと水飲みたい
+-->
+
+---
+layout: center
+---
+
+# 進捗を把握する難しさ
+
+<!--
+- 14:23
+- 一方で「進捗を把握する」ことは一筋縄ではいかないことを見ていきましょう
+- これは自分の進捗だって難しい。他人ならなおさら。
+-->
+
+---
+
+# (再掲)進捗であるもの、進捗でないもの
+
+- ◯◯機能のリリースをした → 👍
+- ◯◯機能のテストが完了した → 👍
+- レビューで修正すべき点が明らかになった → 👍
+- MTGによって来期の計画が決まった → 👍
+
+<br/>
+
+- 1時間のMTGをした → 👎
+- 実装が進んだ → 👎
+- いろいろやった → 👎
+---
+
+# (再掲)よい「計画づくり」とは
+
+よい「計画づくり」を続けると、さまざまなメリットがある
+
+> よい計画づくりとは、以下のような特徴を持ったプロセスのことだ。いずれも「ソフトウェア開発の問い」に対する答えを見つける手助けとなる。  
+・**リスクを軽減する**  
+・**不確実性を減らす**  
+・**意思決定を支援する**  
+・信頼を確立する  
+・情報を伝達する  
+(p29, 太字は引用者)
+
+---
+
+# 「進捗ではない」「計画づくりにひもづかない」報告
+
+<div class="p-20">
+
+  <div class="text-left">
+  👨「◯◯機能の実装をつづけます！」
+  </div>
+
+  <div class="text-right">
+
+  👩「昨日は〜に関するMTGをして、今日は...のMTGをします！」
+  </div>
+
+  <div class="text-center">
+
+  💪「昨日はいろんなことをしました。今日もタスクをどんどん片付けます！」
+  </div>
+
+  <div class="text-right">
+
+  😎「とくに報告すべきものはありません！」
+  </div>
+</div>
+
+<div class="p-4 bg-blue500/20 text-2xl text-center">
+
+**進捗の把握しづらい情報共有は、よい計画づくりを難しくしてしまう**
+
+</div>
+
+<!--
+14:25
+- まず、これらは決して「怠けている」わけではない。仕事はしている
+- しかし計画づくりに活かせる情報か？　そうではない
+  - リスクは軽減した？　不確実性は減った？　意思決定を支援できそう？
+- 進捗のわからない情報を受けても、計画を見直せない
+  - だから土壇場になって計画の大きな見直しが発生する
+-->
+
+---
+layout: center
+---
+
+# 進捗をうまく把握するための工夫
+
+<!--
+- ではどのようにして他人の進捗を把握しましょうか？
+-->
+
+---
+
+# どんな情報を引き出したいか
+
+<div class="grid grid-cols-2 gap-4">
+
+  <div class="p-4">
+
+  <div class="text-center">進捗を把握するために</div>
+
+  <div class="p-4 bg-blue500/20 text-sm">
+
+  <span class="text-2xl">これまでどこにいて、<br/>いまどこにいるのか？</span>
+
+  - 差分（状況の変化）のわかる情報
+
+  </div>
+
+  </div>
+
+  <div class="p-4">
+
+  <div class="text-center">よい計画づくりのために</div>
+
+  <div class="p-4 bg-blue500/20 text-sm">
+
+  <span class="text-2xl">辿り着いてわかったことはなにか？</span>
+
+  - リスク・不確実性の増減のわかる情報
+  - 意思決定の材料になる情報
+
+  </div>
+
+
+  </div>
+
+</div>
+
+<div class="px-4">
+
+  <div class="text-sm">
+
+  👨「昨日予定していたAPIの設計について、OpenAPIのyamlファイルの作成まで完成した。」
+  </div>
+
+  <div class="text-sm">
+
+  👩「開発は順調だけれど、実装するなかで気になる点が出てきた。それは〜」
+  </div>
+
+  <div class="text-sm">
+
+  😎「仕様・実装が複雑になり、後半に予定している結合テストのシナリオが当初の2,3倍ぐらいに膨らみそうだとわかった」
+  </div>
+
+</div>
+
+<!--
+- 14:27
+- あなたはこれまでどこにいて、いまどこにいるのか
+- 辿り着いてわかったことはなにか？
+- 具体例の説明
+-->
+
+---
+
+# ここまでの結論
+
+<div class="text-2xl">
+
+- 「計画づくり」を続けるには「進捗」を出すことが重要
+- 「進捗」を把握すれば「計画づくり」が続けられる
+  - <span class="text-xl">デイリーとは「進捗を把握し、計画を小さく修正できる」貴重な時間</span>
+- **進捗を把握するのは難しい**
+- **「これまでどこにいて、いまどこにいるのか」「辿り着いてわかったことはなにか」を把握しよう**
+
+</div>
+
+<!--
+
+-->
+
+---
+layout: center
+---
+
+# 「進捗」を把握しやすくするフレーズ
+
+<!--
+- 14:28
+- Discordにたくさん書いてくれると嬉しい！
+-->
+
+---
+layout: center
+---
+
+<div class="m-20 p-8 bg-green500/20">
+
+みなさんなら、どうやって情報を引き出しますか？
+
+「こうしている」とか「こう言ったらいいかも」など教えてほしいです！
+
+</div>
+
+---
+layout: cover
+background: ./images/pawel-czerwinski-i0h7EEsOwNQ-unsplash.jpg
+---
+
+# 次にやることは？
+
+# このあとは何をする？
+
+---
+
+# 次にやることは？ / このあとは何をする？
+
+<div class="p-4 text-xl">
+
+- できるかぎり具体的な「次の行動」を確認する
+- 自然と「いまどこまで終わったか」が明らかになることが多い
+- 明確でないときは、なにかに困っていることがわかる
+- いざ考えてみると課題が言語化される
+
+</div>
+
+<!--
+- めっちゃ具体的な回答が出るまで質問することがポイント
+-->
+
+---
+layout: cover
+background: ./images/pramod-tiwari-2JMKvS2qT9c-unsplash.jpg
+---
+
+# 〜時点でどんな状態を目指しますか？
+
+---
+
+# 〜時点でどんな状態を目指しますか？
+
+<div class="p-4 text-xl">
+
+- 「〜という状態になっている」「〜が完了している」などを定義してみる
+  - 「状態」の達成条件も決めておくと尚良し
+- チームとして想像してないケースも意外に多い
+  - 時間をかけてでもやっておくと、ふりかえりがやりやすくなる
+- 「わからない」も大事な情報。リスクや不確実性を表すから
+
+</div>
+
+<!--
+- どちらかというと目標設定の話
+- ただ目標を決める＝計画をつくるには、いまの状況を認識しなければいけない
+- 「わからない」は貴重な情報
+-->
+
+---
+layout: cover
+background: ./images/eren-yildiz-oQzH8fIfjoM-unsplash.jpg
+---
+
+# 「明日〜して」って言われたら大丈夫ですか？
+
+---
+
+# 「明日〜して」って言われたら大丈夫ですか？
+
+<div class="p-4 text-xl">
+
+- 進捗の確かさや、お互いの完了条件が一致しているかを確認できる
+- とくに「完成」「リリース」という状態が各役割で一致していないことが多い
+  - 「実装が(だいたい)終わった」と伝えているが、テストは終わってないし、リファクタリングも必要だと自覚している
+  - 開発者目線ではリリースできるが、リリースに必要なそのほかのステップが進んでいない
+
+</div>
+<!--
+- 何％ぐらい終わってますか？　より良いと思っている
+- 冗談めかして「明日リリースしちゃってもいいですか？」とか聞く
+- 「だいたい終わった」みたいな話が出てきたらこれを使うと効果ある
+  - だいたい終わったけれど「完成」ではない、みたいなことあるよね？
+-->
+
+---
+layout: cover
+background: ./images/sumaid-pal-singh-bakshi-W9x3K7pD0S8-unsplash.jpg
+---
+
+# 大変だったことはありますか？
+
+---
+
+# 大変だったことはありますか？
+
+<div class="p-4 text-xl">
+
+- 「たどりついてわかったこと」の観点
+- 「時間がかかった」「面倒くさかった」「できなかったので〜で代用した」などある
+- 再現するものであれば、チーム・組織として潰したい
+
+</div>
+
+<!--
+- 「たどりついてわかったこと」の観点
+- 「時間がかかった」「面倒くさかった」「できなかったので〜で代用した」などある
+- 再現するものであれば、チーム・組織として潰したい
+-->
+
+---
+layout: cover
+background: ./images/gor-UqV3Chmk8v4-unsplash.jpg
+---
+
+# どうでもいいけど話しておきたいことはありますか？
+
+---
+
+# どうでもいいけど話しておきたいことはありますか？
+
+<div class="p-4 text-xl">
+
+- ときおりとんでもない効果を出す質問
+- ふだん発言の少ない人や発言をためらってる人が喋ってくれるように促してみる
+- 「どうでもいい」情報＝「自身ではコントロールできない」情報
+  - どうでもいいのではなく、解決が難しいから黙っていたことがほとんど
+
+</div>
+
+<!--
+- できるかぎり喋りやすい雰囲気にしてから聞く
+-->
+
+---
+layout: center
+---
+
+# みんなのフレーズ
+
+<!--
+- ぜひ皆さんも！
+- 時間があまったときのメモ
+  - 週報、テクニカルライティングの話
+  - これを何人かに伝えて実際に効果がめちゃくちゃあった
+-->
+
+---
+layout: center
+---
+
+
+<div class="content-center my-20">
+
+# ご清聴ありがとうございました！
+
+</div>
+
+<!--
+- 時間があまったときのメモ
+-->
